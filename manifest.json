@@ -1,11 +1,12 @@
 {
   "id": "obsidian-clearing-images",
-  "name": "清理未使用图片",
+  "name": "clearing unused images",
   "version": "1.1.1",
   "minAppVersion": "0.11.13",
-  "description": "清理 Markdown 笔记中不再使用的图片，以节省空间。",
+  "description": "clearing unused images",
   "author": "minghua-123",
   "authorUrl": "https://github.com/minghua-123",
   "fundingUrl": "https://ko-fi.com/ozante",
   "isDesktopOnly": false
 }
+
