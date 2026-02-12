@@ -1,5 +1,5 @@
 {
-    "id": "oz-clear-unused-images",
+    "id": "obsidian-clearing-images",
     "name": "清理未使用图片",
     "version": "1.1.1",
     "minAppVersion": "0.11.13",
@@ -9,3 +9,4 @@
     "fundingUrl": "https://ko-fi.com/ozante",
     "isDesktopOnly": false
 }
+
