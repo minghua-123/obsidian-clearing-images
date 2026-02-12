@@ -126,17 +126,17 @@ export const deleteFilesInTheList = async (
     let textToView = '';
     for (let file of fileList) {
         if (fileIsInExcludedFolder(file, plugin)) {
-            console.log('File not referenced but excluded: ' + file.path);
+            console.log('文件未被引用但已排除: ' + file.path);
         } else {
             if (deleteOption === '.trash') {
                 await app.vault.trash(file, false);
-                textToView += `[+] Moved to Obsidian Trash: ` + file.path + '</br>';
+                textToView += `[+] 已移动到 Obsidian 回收站: ` + file.path + '</br>';
             } else if (deleteOption === 'system-trash') {
                 await app.vault.trash(file, true);
-                textToView += `[+] Moved to System Trash: ` + file.path + '</br>';
+                textToView += `[+] 已移动到系统回收站: ` + file.path + '</br>';
             } else if (deleteOption === 'permanent') {
                 await app.vault.delete(file);
-                textToView += `[+] Deleted Permanently: ` + file.path + '</br>';
+                textToView += `[+] 已永久删除: ` + file.path + '</br>';
             }
             deletedImages++;
         }
@@ -181,7 +181,7 @@ const fileIsInExcludedFolder = (file: TFile, plugin: OzanClearImages): boolean =
 
 export const getFormattedDate = () => {
     let dt = new Date();
-    return dt.toLocaleDateString('en-GB', {
+    return dt.toLocaleDateString('zh-CN', {
         year: 'numeric',
         month: '2-digit',
         day: '2-digit',
